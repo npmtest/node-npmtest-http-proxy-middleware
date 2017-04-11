@@ -1,0 +1,109 @@
+# test coverage for  [http-proxy-middleware (v0.17.4)](https://github.com/chimurai/http-proxy-middleware)  [![npm package](https://img.shields.io/npm/v/npmtest-http-proxy-middleware.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-http-proxy-middleware) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-http-proxy-middleware.svg)](https://travis-ci.org/npmtest/node-npmtest-http-proxy-middleware)
+#### The one-liner node.js proxy middleware for connect, express and browser-sync
+
+[![NPM](https://nodei.co/npm/http-proxy-middleware.png?downloads=true)](https://www.npmjs.com/package/http-proxy-middleware)
+
+| git-branch : | [alpha](https://github.com/npmtest/node-npmtest-http-proxy-middleware/tree/alpha)|
+|--:|:--|
+| coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/coverage.html/index.html)|
+| test-report : | [![test-report](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/test-report.html)|
+| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-http-proxy-middleware/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-http-proxy-middleware/tree/gh-pages/build)|
+
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/coverage.html/index.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-http-proxy-middleware%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/test-report.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-http-proxy-middleware/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-http-proxy-middleware%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-http-proxy-middleware/build/apidoc.html)
+
+![npmPackageListing](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/screenCapture.npmPackageDependencyTree.svg)
+
+
+
+# package.json
+
+```json
+
+{
+    "author": {
+        "name": "Steven Chim"
+    },
+    "bugs": {
+        "url": "https://github.com/chimurai/http-proxy-middleware/issues"
+    },
+    "dependencies": {
+        "http-proxy": "^1.16.2",
+        "is-glob": "^3.1.0",
+        "lodash": "^4.17.2",
+        "micromatch": "^2.3.11"
+    },
+    "description": "The one-liner node.js proxy middleware for connect, express and browser-sync",
+    "devDependencies": {
+        "browser-sync": "^2.18.2",
+        "chai": "^3.5.0",
+        "connect": "^3.5.0",
+        "coveralls": "^2.11.15",
+        "express": "^4.14.0",
+        "istanbul": "^0.4.5",
+        "istanbul-coveralls": "^1.0.3",
+        "mocha": "^3.2.0",
+        "mocha-lcov-reporter": "1.2.0",
+        "opn": "^4.0.2",
+        "ws": "^1.1.1"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "642e8848851d66f09d4f124912846dbaeb41b833",
+        "tarball": "https://registry.npmjs.org/http-proxy-middleware/-/http-proxy-middleware-0.17.4.tgz"
+    },
+    "files": [
+        "index.js",
+        "lib"
+    ],
+    "gitHead": "cb5e084e71bc3202fe4f711f2f5edf4e29355d99",
+    "homepage": "https://github.com/chimurai/http-proxy-middleware",
+    "keywords": [
+        "reverse",
+        "proxy",
+        "middleware",
+        "http",
+        "https",
+        "connect",
+        "express",
+        "browser-sync",
+        "gulp",
+        "grunt-contrib-connect",
+        "websocket",
+        "ws",
+        "cors"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "chimurai",
+            "email": "stevenchim@gmail.com"
+        }
+    ],
+    "name": "http-proxy-middleware",
+    "optionalDependencies": {},
+    "readme": "ERROR: No README data found!",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chimurai/http-proxy-middleware.git"
+    },
+    "scripts": {
+        "clean": "rm -rf coverage",
+        "cover": "npm run clean && istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
+        "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive --reporter spec && istanbul-coveralls && npm run clean",
+        "test": "mocha --recursive --colors --reporter spec"
+    },
+    "version": "0.17.4"
+}
+```
+
+
+
+# misc
+- this document was created with [utility2](https://github.com/kaizhu256/node-utility2)
