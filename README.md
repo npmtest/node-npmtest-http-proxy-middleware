@@ -1,4 +1,7 @@
-# test coverage for  [http-proxy-middleware (v0.17.4)](https://github.com/chimurai/http-proxy-middleware)  [![npm package](https://img.shields.io/npm/v/npmtest-http-proxy-middleware.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-http-proxy-middleware) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-http-proxy-middleware.svg)](https://travis-ci.org/npmtest/node-npmtest-http-proxy-middleware)
+# npmtest-http-proxy-middleware
+
+#### basic test coverage for  [http-proxy-middleware (v0.17.4)](https://github.com/chimurai/http-proxy-middleware)  [![npm package](https://img.shields.io/npm/v/npmtest-http-proxy-middleware.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-http-proxy-middleware) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-http-proxy-middleware.svg)](https://travis-ci.org/npmtest/node-npmtest-http-proxy-middleware)
+
 #### The one-liner node.js proxy middleware for connect, express and browser-sync
 
 [![NPM](https://nodei.co/npm/http-proxy-middleware.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/http-proxy-middleware)
@@ -7,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-http-proxy-middleware/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-http-proxy-middleware/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-http-proxy-middleware/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-http-proxy-middleware/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-http-proxy-middleware/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-http-proxy-middleware/build/coverage.html/index.html)
 
@@ -103,7 +106,8 @@
         "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive --reporter spec && istanbul-coveralls && npm run clean",
         "test": "mocha --recursive --colors --reporter spec"
     },
-    "version": "0.17.4"
+    "version": "0.17.4",
+    "bin": {}
 }
 ```
 
